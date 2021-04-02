@@ -1,0 +1,10 @@
+<div class="col-md-3">
+    <div class="list-group">
+        {% for it in categories %}
+
+        <a href="{{it.get_absolute_url}}" class="list-group-item list-group-item-action">{{ it.title }}  <span
+                class="badge badge-primary badge-pill">{{ it.cnt }}</span></a>
+
+        {% endfor %}
+    </div>
+</div>
